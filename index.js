@@ -51,7 +51,7 @@ app.get('/run-test', (req, res) => {
   });
 });
 
-app.listen(port,()=>
+app.listen(PORT,()=>
 {
     console.log(`server started at ${PORT} port`);
 })
