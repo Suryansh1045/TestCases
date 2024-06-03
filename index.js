@@ -37,7 +37,7 @@ const parseTestResults = (output) => {
 
 app.get('/run-test', (req, res) => {
     console.log("api triggered")
-  exec('npm test', (error, stdout, stderr) => {
+  exec('mocha testCases/FormValidation.js --timeout 0', (error, stdout, stderr) => {
     const output = stdout + stderr;
     const { passedTests, failedTests } = parseTestResults(output);
 
