@@ -3,7 +3,9 @@ const { exec } = require('child_process');
 require('dotenv').config()
 
 const app = express();
-const port=process.env.port||4000;
+
+
+const PORT = process.env.PORT || 4000;
 
 const parseTestResults = (output) => {
     const passedTests = [];
@@ -51,5 +53,5 @@ app.get('/run-test', (req, res) => {
 
 app.listen(port,()=>
 {
-    console.log(`server started at ${port} port`);
+    console.log(`server started at ${PORT} port`);
 })
