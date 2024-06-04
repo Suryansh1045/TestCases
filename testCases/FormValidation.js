@@ -1,11 +1,11 @@
 const { expect } = require('chai');
-const { By, Key, until ,edgeDriver} = require('../mocha.config');
+const {firefoxDriver, By, Key, until ,} = require('../mocha.config');
 
-// describe("Intial Claims Test Cases using Chrome Browser", function () {
+ describe("Intial Claims Test Cases using Chrome Browser", function () {
 //   console.log("first test cases is getting executed");
-//   it("TestCase 1: Valid Form Data using Chrome Browser", async function () {
-//     await validFormData(chromeDriver,"Test","DBQ01","chadDBQTest01@chadcollins.com", 3653249292,94041);
-//   });     
+  it("TestCase 1: Valid Form Data using Chrome Browser", async function () {
+    await validFormData(firefoxDriver,"Test","DBQ01","chadDBQTest01@chadcollins.com", 3653249292,94041);
+  });     
   
 //   it("TestCase 2: Invalid Phone Number using Chrome Browser",async function(){
 //     await InvalidPhoneNumber(chromeDriver,"Test","DBQ02","chadDBQTest02@chadcollins.com", 1010101010,96041)
@@ -52,8 +52,9 @@ const { By, Key, until ,edgeDriver} = require('../mocha.config');
 //     await validFormData(chromeDriver,"Test","DBQ12","chadDBQTest12@chadcollins.com",5158451155 ,94041)
 //   })
  
-// });
+ });
 
+/*
 describe("Intial Claims Test Cases using Edge Browser",function(){
 
   it("TestCase 1: Valid Form Data using Edge Browser", async function () {
@@ -103,7 +104,7 @@ describe("Intial Claims Test Cases using Edge Browser",function(){
   it("TestCase 12: Valid Zip Code using Edge Browser",async function(){
     await validFormData(edgeDriver,"Test","DBQ12","chadDBQTest12@chadcollins.com",5158451155 ,94041)
   })
-});
+});*/
 
 const validFormData=async(driver,firstname,lastname,email,phoneNumber,zip)=>
 {

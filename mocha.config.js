@@ -29,11 +29,16 @@ const chromeDriver = new Builder()
 
 const edgeDriver=new  Builder()
     .forBrowser("MicrosoftEdge")
+    .setEdgeOptions(edgeOptions)
+    .build();    
+
+    const firefoxDriver = new Builder()
+    .forBrowser('firefox')
     .build();    
     
 module.exports = {
     chromeDriver,
     Key,
     By,
-    until,Builder,edgeDriver
+    until,Builder,edgeDriver,firefoxDriver
 };
