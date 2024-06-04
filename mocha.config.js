@@ -14,7 +14,6 @@ options.addArguments('disable-logging');  // Disable logging
 options.addArguments('output=/dev/null');  // Disable logging
 
 const firefoxOptions = new firefox.Options();
-firefoxOptions.addArguments('-headless');
 
 
 const chromeDriver = new Builder()
