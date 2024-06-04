@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const {chromeDriver, By, Key, until, edgeDriver } = require('../mocha.config');
+const {chromeDriver, By, Key, until,  } = require('../mocha.config');
 
 describe("Intial Claims Test Cases using Chrome Browser", function () {
   console.log("first test cases is getting executed");
