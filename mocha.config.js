@@ -1,6 +1,7 @@
-const { Builder, By, Key, until } = require('selenium-webdriver');
+const { Builder, By, Key, until,Browser } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 const edge = require('selenium-webdriver/edge');
+
 
 let options = new chrome.Options();
 options.excludeSwitches(['enable-logging']);
@@ -28,7 +29,7 @@ const chromeDriver = new Builder()
     .build();
 
     const edgeDriver=new  Builder()
-    .forBrowser("MicrosoftEdge")
+    .forBrowser(Browser.EDGE)
     .setEdgeOptions(edgeOptions)
     .build();    
     
