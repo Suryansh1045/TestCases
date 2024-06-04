@@ -8,7 +8,7 @@ const { By, Key, until, chromeDriver ,} = require('../mocha.config');
   });     
   
   it("TestCase 2: Invalid Phone Number using Chrome Browser",async function(){
-    await InvalidPhoneNumber(chromeDriver,"Test","DBQ02","chadDBQTest02@chadcollins.com", 1010101010,96)
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ02","chadDBQTest02@chadcollins.com", 1010101010,96041)
   })
   
 
