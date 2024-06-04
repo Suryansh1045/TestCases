@@ -35,10 +35,13 @@ const parseTestResults = (output) => {
   };
 
 
+
 app.get('/run-test', (req, res) => {
     console.log("api triggered")
   exec('npm test', (error, stdout, stderr) => {
     console.log("child process executed");
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
     const output = stdout + stderr;
     const { passedTests, failedTests } = parseTestResults(output);
 
