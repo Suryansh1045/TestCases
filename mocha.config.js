@@ -27,7 +27,10 @@ const chromeDriver = new Builder()
     .setChromeOptions(options)
     .build();
 
-
+    const edgeDriver=new  Builder()
+    .forBrowser("MicrosoftEdge")
+    .setEdgeOptions(edgeOptions)
+    .build();    
     
 module.exports = {
     chromeDriver,
