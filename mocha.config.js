@@ -13,14 +13,14 @@ options.addArguments('disable-logging');  // Disable logging
 options.addArguments('output=/dev/null');  // Disable logging
 
 let edgeOptions = new edge.Options();
-// edgeOptions.excludeSwitches(['enable-logging']);
-// edgeOptions.addArguments('headless');  // Uncomment to run in headless mode
-// edgeOptions.addArguments('disable-gpu');  // Applicable for some environments
-// edgeOptions.addArguments('disable-dev-shm-usage');  // Overcome limited resource problems
-// edgeOptions.addArguments('no-sandbox');  // Bypass OS security model
-// edgeOptions.addArguments('log-level=3');  // Reduce console log level
-// edgeOptions.addArguments('disable-logging');  // Disable logging
-// edgeOptions.addArguments('output=/dev/null');  // Disable logging
+edgeOptions.excludeSwitches(['enable-logging']);
+edgeOptions.addArguments('headless');  // Uncomment to run in headless mode
+edgeOptions.addArguments('disable-gpu');  // Applicable for some environments
+edgeOptions.addArguments('disable-dev-shm-usage');  // Overcome limited resource problems
+edgeOptions.addArguments('no-sandbox');  // Bypass OS security model
+edgeOptions.addArguments('log-level=3');  // Reduce console log level
+edgeOptions.addArguments('disable-logging');  // Disable logging
+edgeOptions.addArguments('output=/dev/null');  // Disable logging
 
 const chromeDriver = new Builder()
     .forBrowser("chrome")
@@ -29,7 +29,6 @@ const chromeDriver = new Builder()
 
 const edgeDriver=new  Builder()
     .forBrowser("MicrosoftEdge")
-    .setEdgeOptions(edgeOptions)
     .build();    
     
 module.exports = {
