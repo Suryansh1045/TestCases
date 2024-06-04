@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const {chromeDriver, By, Key, until, edgeDriver } = require('../mocha.config');
 
 describe("Intial Claims Test Cases using Chrome Browser", function () {
-
+  console.log("first test cases is getting executed");
   it("TestCase 1: Valid Form Data using Chrome Browser", async function () {
     await validFormData(chromeDriver,"Test","DBQ01","chadDBQTest01@chadcollins.com", 3653249292,94041);
   });     
