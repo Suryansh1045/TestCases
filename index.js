@@ -5,7 +5,7 @@ require('dotenv').config()
 const app = express();
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 const parseTestResults = (output) => {
     const passedTests = [];
@@ -37,7 +37,7 @@ const parseTestResults = (output) => {
 
 app.get('/run-test', (req, res) => {
     console.log("api triggered")
-  exec('mocha testCases/FormValidation.js --timeout 0', (error, stdout, stderr) => {
+  exec('npm test', (error, stdout, stderr) => {
     const output = stdout + stderr;
     const { passedTests, failedTests } = parseTestResults(output);
 
