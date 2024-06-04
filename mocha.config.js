@@ -1,6 +1,5 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
-const firefox = require('selenium-webdriver/firefox');
 // const edge = require('selenium-webdriver/edge');
 
 let options = new chrome.Options();
@@ -13,7 +12,6 @@ options.addArguments('log-level=3');  // Reduce console log level
 options.addArguments('disable-logging');  // Disable logging
 options.addArguments('output=/dev/null');  // Disable logging
 
-const firefoxOptions = new firefox.Options();
 
 
 const chromeDriver = new Builder()
@@ -23,14 +21,11 @@ const chromeDriver = new Builder()
 
   
 
-    const firefoxDriver = new Builder()
-    .forBrowser('firefox')
-    .setFirefoxOptions(firefoxOptions)
-    .build();    
+     
     
 module.exports = {
     chromeDriver,
     Key,
     By,
-    until,Builder,firefoxDriver
+    until,Builder
 };
