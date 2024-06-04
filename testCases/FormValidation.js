@@ -7,50 +7,50 @@ describe("Intial Claims Test Cases using Chrome Browser", function () {
     await validFormData(chromeDriver,"Test","DBQ01","chadDBQTest01@chadcollins.com", 3653249292,94041);
   });     
   
-  // it("TestCase 2: Invalid Phone Number using Chrome Browser",async function(){
-  //   await InvalidPhoneNumber(chromeDriver,"Test","DBQ02","chadDBQTest02@chadcollins.com", 1010101010,96041)
-  // })
+  it("TestCase 2: Invalid Phone Number using Chrome Browser",async function(){
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ02","chadDBQTest02@chadcollins.com", 1010101010,96041)
+  })
   
 
-  // it("TestCase 3: Invalid Phone Number using Chrome Browser",async function(){
-  //   await InvalidPhoneNumber(chromeDriver,"Test","DBQ03","chadDBQTest03@chadcollins.com", 3452342344,96041)
-  // })
+  it("TestCase 3: Invalid Phone Number using Chrome Browser",async function(){
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ03","chadDBQTest03@chadcollins.com", 3452342344,96041)
+  })
 
-  // it("TestCase 4: Non Digits Phone Number using Chrome Browser",async function(){
-  //   await InvalidPhoneNumber(chromeDriver,"Test","DBQ04","chadDBQTest04@chadcollins.com", "asdasddasd",96041)
-  // })
+  it("TestCase 4: Non Digits Phone Number using Chrome Browser",async function(){
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ04","chadDBQTest04@chadcollins.com", "asdasddasd",96041)
+  })
 
-  // it("TestCase 5: Special Characters using Chrome Browser",async function(){
-  //   await InvalidPhoneNumber(chromeDriver,"Test","DBQ05","chadDBQTest05@chadcollins.com", 345-345-3455,96041)
-  // })
+  it("TestCase 5: Special Characters using Chrome Browser",async function(){
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ05","chadDBQTest05@chadcollins.com", 345-345-3455,96041)
+  })
 
-  // it("TestCase 6: Special Characters using Chrome Browser",async function(){
-  //   await InvalidPhoneNumber(chromeDriver,"Test","DBQ06","chadDBQTest06@chadcollins.com","123123123#",96041)
-  // })
+  it("TestCase 6: Special Characters using Chrome Browser",async function(){
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ06","chadDBQTest06@chadcollins.com","123123123#",96041)
+  })
 
-  // it("TestCase 7: valid Phone Number using Chrome Browser",async function(){
-  //   await validFormData(chromeDriver,"Test","DBQ07","chadDBQTest07@chadcollins.com",2403753633,96041)
-  // })
+  it("TestCase 7: valid Phone Number using Chrome Browser",async function(){
+    await validFormData(chromeDriver,"Test","DBQ07","chadDBQTest07@chadcollins.com",2403753633,96041)
+  })
 
-  // it("TestCase 8: valid Phone Number using Chrome Browser",async function(){
-  //   await validFormData(chromeDriver,"Test","DBQ08","chadDBQTest08@chadcollins.com",2403985633,96041)
-  // })
+  it("TestCase 8: valid Phone Number using Chrome Browser",async function(){
+    await validFormData(chromeDriver,"Test","DBQ08","chadDBQTest08@chadcollins.com",2403985633,96041)
+  })
 
-  // it("TestCase 9: Already registered number Phone Number using Chrome Browser",async function(){
-  //   await InvalidPhoneNumber(chromeDriver,"Test","DBQ09","chadDBQTest09@chadcollins.com", 8645823654,96041,true)
-  // })
+  it("TestCase 9: Already registered number Phone Number using Chrome Browser",async function(){
+    await InvalidPhoneNumber(chromeDriver,"Test","DBQ09","chadDBQTest09@chadcollins.com", 8645823654,96041,true)
+  })
 
-  // it("TestCase 10: Invalid Zip Code using Chrome Browser",async function(){
-  //   await InvalidZip(chromeDriver,"Test","DBQ10","chadDBQTest10@chadcollins.com",5158451155 ,940)
-  // })
+  it("TestCase 10: Invalid Zip Code using Chrome Browser",async function(){
+    await InvalidZip(chromeDriver,"Test","DBQ10","chadDBQTest10@chadcollins.com",5158451155 ,940)
+  })
 
-  // it("TestCase 11: Invalid Zip Code using Chrome Browser",async function(){
-  //   await InvalidZip(chromeDriver,"Test","DBQ11","chadDBQTest11@chadcollins.com",5158451155 ,"940@1")
-  // })
+  it("TestCase 11: Invalid Zip Code using Chrome Browser",async function(){
+    await InvalidZip(chromeDriver,"Test","DBQ11","chadDBQTest11@chadcollins.com",5158451155 ,"940@1")
+  })
 
-  // it("TestCase 12: Valid Zip Code using Chrome Browser",async function(){
-  //   await validFormData(chromeDriver,"Test","DBQ12","chadDBQTest12@chadcollins.com",5158451155 ,94041)
-  // })
+  it("TestCase 12: Valid Zip Code using Chrome Browser",async function(){
+    await validFormData(chromeDriver,"Test","DBQ12","chadDBQTest12@chadcollins.com",5158451155 ,94041)
+  })
  
 });
 
