@@ -23,5 +23,5 @@ module.exports = {
     chromeDriver,
     Key,
     By,
-    until,Builder,edgeDriver
+    until,Builder
 };
