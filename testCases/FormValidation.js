@@ -224,14 +224,14 @@ const fillForm=async(driver,firstname,lastname,email,phoneNumber,zip)=>
         await driver.get("https://test.reemedical.com/");
         await driver.findElement(By.className("quform-field-3_71_1")).click();
         await driver.findElement(By.className("quform-button-next-3_36")).click();
-        await driver.sleep(2000);
+        await driver.sleep(4000);
         await driver.findElement(By.className("quform-field-3_47_1")).click();
         await driver.findElement(By.className("quform-button-next-3_46")).click();
-        await driver.sleep(2000);
+        await driver.sleep(4000);
         await driver.findElement(By.className("quform-field-3_53")).click();
         await driver.findElement(By.xpath("//option[@value='60%']")).click();
         await driver.findElement(By.className("quform-button-next-3_52")).click();
-        await driver.sleep(2000);
+        await driver.sleep(4000);
         await driver.findElement(By.className("quform-field-3_4_2")).sendKeys(firstname)
         await driver.findElement(By.className("quform-field-3_4_4")).sendKeys(lastname)
         await driver.findElement(By.className("quform-field-3_5")).sendKeys(email);
