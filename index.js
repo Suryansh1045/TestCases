@@ -55,6 +55,26 @@ app.get('/run-test', (req, res) => {
   });
 });
 
+app.get('/run-testIC', (req, res) => {
+  console.log("api triggered")
+exec('npm run testIC', (error, stdout, stderr) => {
+  console.log("child process executed");
+  console.log(`stdout: ${stdout}`);
+  console.log(`stderr: ${stderr}`);
+  const output = stdout + stderr;
+  const { passedTests, failedTests } = parseTestResults(output);
+
+  res.json({
+    status: 'completed',
+    passedTests,
+    failedTests,
+    total_passed_test_case:passedTests.length,
+    total_failed_test_case:failedTests.length
+  });
+});
+});
+
+
 const server = app.listen(PORT, () => {
   console.log(`Server started at port ${PORT}`);
 });

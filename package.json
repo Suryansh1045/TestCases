@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha testCases/FormValidation.js --timeout 0"
+    "testDBQ": "mocha testCases/DBQFormValidation.js --timeout 0",
+    "testIC": "mocha testCases/ICFormValidation.js --timeout 0"
   },
   "author": "",
   "license": "ISC",
