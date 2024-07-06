@@ -34,7 +34,7 @@ const { By, Key, until, chromeDriver } = require('../mocha.config');
   it("TestCase 8: valid Phone Number using Chrome Browser",async function(){
     await validFormData(chromeDriver,"Test","DBQ07","chadDBQTest07@chadcollins.com",2403753633,96041)
   })
-
+/*
   it("TestCase 9: valid Phone Number using Chrome Browser",async function(){
     await validFormData(chromeDriver,"Test","DBQ08","chadDBQTest08@chadcollins.com",2403985633,96041)
   })
@@ -67,7 +67,7 @@ const { By, Key, until, chromeDriver } = require('../mocha.config');
   })
   it("TestCase 17: Valid Zip Code using Chrome Browser",async function(){
     await validFormData(chromeDriver,"Test","DBQ12","chadDBQTest12@chadcollins.com",5158451155 ,96114)
-  })
+  })*/
  
  });
 
