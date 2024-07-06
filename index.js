@@ -38,7 +38,7 @@ const parseTestResults = (output) => {
 
 app.get('/run-test', (req, res) => {
     console.log("api triggered")
-  exec('npm test', (error, stdout, stderr) => {
+  exec('npm run testDBQ', (error, stdout, stderr) => {
     console.log("child process executed");
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
